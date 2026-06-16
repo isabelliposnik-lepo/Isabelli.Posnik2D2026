@@ -1,1 +1,43 @@
- box-shadow: 8px 8px 0px #000;
+ /* 1. FUNDO DA PÁGINA (Estilo Pop Art Vibrante) */
+body {
+    background-color: #FFDE00 !important; /* Amarelo Pop Art icônico */
+    color: #000000 !important;            /* Texto sempre preto puro */
+    font-family: 'Impact', 'Arial Black', sans-serif !important; /* Fontes marcantes */
+}
+
+/* 2. O BLOCO PRINCIPAL / CARD (Onde sua sombra vai brilhar) */
+.main-content, article, .card, main {
+    background-color: #FF4A5A !important; /* Fundo do bloco em Vermelho/Rosa choque */
+    color: #FFFFFF !important;            /* Texto do bloco em branco para contraste */
+    
+    /* Sua sombra original com prioridade máxima */
+    box-shadow: 8px 8px 0px #000000 !important; 
+    
+    /* Borda grossa preta obrigatória para o efeito Pop Art */
+    border: 4px solid #000000 !important; 
+    
+    /* Espaçamentos para o design respirar e não cortar a sombra */
+    padding: 25px !important;
+    margin: 20px auto !important;
+    max-width: 600px;
+    border-radius: 0px !important; /* Cantos totalmente retos combinam mais */
+}
+
+/* 3. LINKS E BOTÕES (Efeito de clique Pop Art) */
+a, button {
+    display: inline-block;
+    background-color: #00E5FF !important; /* Azul ciano Pop */
+    color: #000000 !important;
+    border: 3px solid #000000 !important;
+    padding: 10px 20px !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px #000000 !important; /* Sombra menor no botão */
+    transition: transform 0.1s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+a:hover, button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000000 !important;
+}
